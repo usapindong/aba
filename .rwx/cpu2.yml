@@ -5,7 +5,4 @@ base:
 tasks:
   - key: cpu-info
     run: |
-      echo "CPU RWX:"
       lscpu
-      echo "CORE:"
-      nproc
