@@ -1,8 +1,7 @@
-base:
-  image: ubuntu:24.04
-  config: rwx/base 1.1.1
-
 tasks:
   - key: cpu-info
     run: |
+      echo "CPU:"
       lscpu
+      echo "CORE:"
+      nproc
